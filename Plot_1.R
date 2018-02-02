@@ -1,3 +1,4 @@
+
 #Set the working directory
 library(dplyr)
 setwd("C:/Users/zps48/Documents/R/DataScience/ExData_Plotting1/Data")
@@ -14,5 +15,6 @@ MyData.f <- filter(MyData.C, Date >= "2007-02-01" & Date<="2007-02-02")
 #Convert the factor variable to Numeric
 GblActPwr<-as.numeric(as.character(MyData.f$Global_active_power)) 
 hist(GblActPwr,main="Global Active Power",xlab="Global Active Power (kilowatts)",col="red",breaks=16)
-dev.copy(png, file="plot_2.png",width=480, height=480)
+dev.copy(png, file="plot_1.png",width=480, height=480)
 dev.off()
+
